@@ -143,7 +143,7 @@ export function Home() {
               </div>
 
               {/* Stat grid */}
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 gap-3">
                 {profile.stats.map((stat) => (
                   <div key={stat.label} className="rounded-xl border border-line bg-bg-soft p-4">
                     <p className="text-accent-gradient font-display text-2xl font-extrabold">{stat.value}</p>

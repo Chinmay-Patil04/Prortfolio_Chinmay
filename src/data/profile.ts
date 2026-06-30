@@ -21,6 +21,7 @@ export const profile = {
     { value: "3,500+", label: "ATM locations deployed",      sub: "Pan-India VSAT & SD-WAN" },
     { value: "4+",     label: "Years in enterprise delivery", sub: "Telecom & IT infrastructure" },
     { value: "Tier-1", label: "Banking clients served",       sub: "SBI Group · Axis Group · Bajaj Finance" },
+    { value: "99%+",   label: "SLA adherence rate",          sub: "Across all active programmes" },
   ],
 
   pillars: [
