@@ -43,6 +43,11 @@ export function Experience() {
               >
                 <p className={`text-sm font-bold ${active === i ? "text-accent-dim" : "text-ink"}`}>
                   {j.company}
+                  {j.type === "Internship" && (
+                    <span className="ml-1 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                      Internship
+                    </span>
+                  )}
                 </p>
                 <p className="mt-0.5 text-xs text-ink-muted">
                   {j.type === "Internship" ? `Internship · ${j.period}` : j.period}
@@ -72,7 +77,12 @@ export function Experience() {
                   </div>
                   <div className="min-w-0">
                     <h2 className="text-lg font-bold text-ink sm:text-xl">{job.role}</h2>
-                    <p className="mt-0.5 font-semibold text-accent">{job.company}</p>
+                    <p className="mt-0.5 font-semibold text-accent">
+                      {job.company}
+                      {job.type === "Internship" && (
+                        <span className="ml-1.5 text-xs font-semibold text-amber-700">· Internship</span>
+                      )}
+                    </p>
                   </div>
                 </div>
                 <div className="text-left text-sm text-ink-muted sm:text-right">

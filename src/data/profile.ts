@@ -111,7 +111,7 @@ export const profile = {
       ],
     },
     {
-      role: "Automation Supervisor",
+      role: "Automation Intern",
       company: "Selec Controls Pvt Ltd",
       companyShort: "Selec",
       period: "May 2018 – May 2019",
