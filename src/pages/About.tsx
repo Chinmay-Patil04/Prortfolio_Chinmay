@@ -27,7 +27,7 @@ export function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="mt-3 font-display text-4xl font-bold text-ink md:text-5xl lg:text-6xl"
+              className="mt-3 font-display text-3xl font-bold text-ink sm:mt-3 sm:text-4xl md:text-5xl lg:text-6xl"
             >
               Delivery.{" "}
               <span className="text-accent-gradient">Governance.</span>

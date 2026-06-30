@@ -14,10 +14,8 @@ export function Projects() {
           className="mb-10"
         >
           <span className="eyebrow">Projects</span>
-          <h1 className="mt-2 font-display text-4xl font-bold text-ink md:text-5xl">
-            Built & shipped
-          </h1>
-          <p className="mt-3 max-w-xl text-ink-secondary md:text-lg">
+          <h1 className="page-title mt-2">Built & shipped</h1>
+          <p className="page-subtitle max-w-xl">
             PMO dashboards and analytics prototypes — built to demonstrate delivery governance and reporting skills.
           </p>
         </motion.div>
@@ -32,7 +30,7 @@ export function Projects() {
               className="card overflow-hidden"
             >
               <div className="h-1 w-full bg-gradient-to-r from-accent to-violet-400" />
-              <div className="p-6 md:p-8 lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
+              <div className="p-4 sm:p-6 md:p-8 lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
                 {/* Left */}
                 <div>
                   <div className="flex items-start gap-4">

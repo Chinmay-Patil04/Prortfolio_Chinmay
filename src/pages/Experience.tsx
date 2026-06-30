@@ -17,10 +17,8 @@ export function Experience() {
           className="mb-10"
         >
           <span className="eyebrow">Experience</span>
-          <h1 className="mt-2 font-display text-4xl font-bold text-ink md:text-5xl">
-            Career journey
-          </h1>
-          <p className="mt-3 text-ink-secondary md:text-lg">
+          <h1 className="page-title mt-2">Career journey</h1>
+          <p className="page-subtitle">
             4+ years delivering at the intersection of telecom, banking, and enterprise IT.
           </p>
         </motion.div>
@@ -31,13 +29,13 @@ export function Experience() {
             initial={{ opacity: 0, x: -16 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
-            className="flex gap-2 overflow-x-auto pb-2 lg:flex-col lg:overflow-visible lg:pb-0"
+            className="scroll-tabs lg:flex-col lg:gap-2"
           >
             {profile.experience.map((j, i) => (
               <button
                 key={`${j.company}-${i}`}
                 onClick={() => setActive(i)}
-                className={`shrink-0 rounded-xl border px-4 py-4 text-left transition-all lg:w-full ${
+                className={`scroll-tab ${
                   active === i
                     ? "border-accent bg-accent-light shadow-sm"
                     : "border-line bg-bg hover:border-accent/30 hover:bg-accent-light/40"
@@ -46,7 +44,9 @@ export function Experience() {
                 <p className={`text-sm font-bold ${active === i ? "text-accent-dim" : "text-ink"}`}>
                   {j.company}
                 </p>
-                <p className="mt-0.5 text-xs text-ink-muted">{j.period}</p>
+                <p className="mt-0.5 text-xs text-ink-muted">
+                  {j.type === "Internship" ? `Internship · ${j.period}` : j.period}
+                </p>
               </button>
             ))}
           </motion.div>
@@ -64,18 +64,18 @@ export function Experience() {
               <div className="h-1 w-full bg-gradient-to-r from-accent to-violet-400" />
             )}
 
-            <div className="p-6 md:p-8">
-              <div className="flex flex-wrap items-start justify-between gap-4">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-light font-display text-sm font-bold text-accent-dim">
+            <div className="p-4 sm:p-6 md:p-8">
+              <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-light font-display text-sm font-bold text-accent-dim sm:h-12 sm:w-12">
                     {job.companyShort.slice(0, 2)}
                   </div>
-                  <div>
-                    <h2 className="text-xl font-bold text-ink">{job.role}</h2>
+                  <div className="min-w-0">
+                    <h2 className="text-lg font-bold text-ink sm:text-xl">{job.role}</h2>
                     <p className="mt-0.5 font-semibold text-accent">{job.company}</p>
                   </div>
                 </div>
-                <div className="text-right text-sm text-ink-muted">
+                <div className="text-left text-sm text-ink-muted sm:text-right">
                   <p className="font-medium text-ink-secondary">{job.period}</p>
                   <p>{job.location}</p>
                   <span

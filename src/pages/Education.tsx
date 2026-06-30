@@ -19,9 +19,7 @@ export function Education() {
           className="mb-10"
         >
           <span className="eyebrow">Background</span>
-          <h1 className="mt-2 font-display text-4xl font-bold text-ink md:text-5xl">
-            Education & certifications
-          </h1>
+          <h1 className="page-title mt-2">Education & certifications</h1>
         </motion.div>
 
         <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr]">
@@ -36,7 +34,7 @@ export function Education() {
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 + i * 0.1 }}
-                className="card border-l-2 border-l-accent p-6"
+                className="card border-l-2 border-l-accent p-5 sm:p-6"
               >
                 <p className="text-lg font-bold text-ink">{edu.degree}</p>
                 <p className="mt-1 font-semibold text-accent">{edu.school}</p>
@@ -68,9 +66,9 @@ export function Education() {
                     initial={{ opacity: 0, x: 14 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1 + i * 0.07 }}
-                    className="card flex items-center justify-between gap-4 px-5 py-4"
+                    className="card flex flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5"
                   >
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <p className="font-semibold text-ink">{cert.name}</p>
                       <p className="mt-0.5 text-sm text-ink-muted">{cert.issuer}</p>
                     </div>

@@ -116,7 +116,7 @@ export const profile = {
       companyShort: "Selec",
       period: "May 2018 – May 2019",
       location: "Navi Mumbai",
-      type: "Full-time",
+      type: "Internship",
       techStack: ["Excel", "PLC", "HMI"],
       outcome: "Sustained on-time delivery targets on the automation production line.",
       highlights: [

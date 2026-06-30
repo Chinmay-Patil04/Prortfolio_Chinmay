@@ -1,4 +1,5 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, MotionConfig, motion } from "framer-motion";
+import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { About }      from "./pages/About";
@@ -19,8 +20,18 @@ const pageVariants = {
 export default function App() {
   const location = useLocation();
 
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <Navbar />
       <AnimatePresence mode="wait">
         <motion.div
@@ -42,6 +53,6 @@ export default function App() {
           </Routes>
         </motion.div>
       </AnimatePresence>
-    </>
+    </MotionConfig>
   );
 }

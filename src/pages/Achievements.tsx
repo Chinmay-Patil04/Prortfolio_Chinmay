@@ -14,10 +14,8 @@ export function Achievements() {
           className="mb-12"
         >
           <span className="eyebrow">Recognition</span>
-          <h1 className="mt-2 font-display text-4xl font-bold text-ink md:text-5xl">
-            Achievements
-          </h1>
-          <p className="mt-3 text-ink-secondary md:text-lg">
+          <h1 className="page-title mt-2">Achievements</h1>
+          <p className="page-subtitle">
             Recognised by clients and employers for delivering measurable outcomes.
           </p>
         </motion.div>
@@ -29,7 +27,7 @@ export function Achievements() {
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.12 }}
-              className="card border-l-2 border-l-accent p-7"
+              className="card border-l-2 border-l-accent p-5 sm:p-7"
             >
               <div className="mb-4 inline-flex rounded-xl bg-accent-light p-3 text-accent">
                 <Award size={22} />

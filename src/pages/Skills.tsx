@@ -13,10 +13,8 @@ export function Skills() {
           className="mb-10"
         >
           <span className="eyebrow">Expertise</span>
-          <h1 className="mt-2 font-display text-4xl font-bold text-ink md:text-5xl">
-            Skills & capabilities
-          </h1>
-          <p className="mt-3 text-ink-secondary md:text-lg">
+          <h1 className="page-title mt-2">Skills & capabilities</h1>
+          <p className="page-subtitle">
             Structured by consulting relevance — governance frameworks to GenAI.
           </p>
         </motion.div>
@@ -28,7 +26,7 @@ export function Skills() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.07 }}
-              className="card p-6"
+              className="card p-5 sm:p-6"
             >
               <h3 className="eyebrow">{group.label}</h3>
               <div className="mt-4 flex flex-wrap gap-2">

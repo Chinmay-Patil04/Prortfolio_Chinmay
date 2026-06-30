@@ -21,15 +21,13 @@ export function Contact() {
           className="mb-14 text-center"
         >
           <span className="eyebrow">Get in touch</span>
-          <h1 className="mt-3 font-display text-4xl font-extrabold text-ink md:text-5xl lg:text-6xl">
-            Open to opportunities
-          </h1>
-          <p className="mx-auto mt-4 max-w-lg text-ink-secondary md:text-lg">
+          <h1 className="page-title mt-3">Open to opportunities</h1>
+          <p className="page-subtitle mx-auto max-w-lg">
             Targeting PMO, consulting, and strategic delivery roles — Big 4, tier-1 consulting, and high-growth organisations.
           </p>
         </motion.div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto">
           {cards.map(({ icon: Icon, label, value, href, cta }, i) => (
             <motion.a
               key={label}
@@ -60,7 +58,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="mt-12 rounded-2xl border border-accent/20 bg-accent-light p-8 text-center"
+          className="mt-10 rounded-2xl border border-accent/20 bg-accent-light p-5 text-center sm:mt-12 sm:p-8"
         >
           <h2 className="font-display text-2xl font-bold text-ink">Ready to collaborate?</h2>
           <p className="mx-auto mt-2 max-w-md text-ink-secondary">
@@ -68,7 +66,7 @@ export function Contact() {
           </p>
           <a
             href={`mailto:${profile.email}`}
-            className="mt-5 inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-bold text-white shadow-accent transition hover:bg-accent-dim"
+            className="mt-5 inline-flex max-w-full items-center justify-center gap-2 rounded-full bg-accent px-5 py-3.5 text-xs font-bold text-white shadow-accent transition hover:bg-accent-dim sm:px-8 sm:text-sm"
           >
             <Mail size={16} />
             {profile.email}
