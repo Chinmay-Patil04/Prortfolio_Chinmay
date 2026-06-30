@@ -64,7 +64,7 @@ export const profile = {
       location: "Navi Mumbai",
       type: "Full-time",
       techStack: ["Excel", "O2C", "UNMS", "SAP", "Microsoft Copilot"],
-      outcome: "Deployed 3,500+ ATM network nodes across India with zero SLA breach.",
+      outcome: "Deployed 3,500+ ATM network links across India with zero SLA breach.",
       highlights: [
         "Led end-to-end VSAT & SD-WAN deployment for 3,500+ ATMs under Hitachi Payments Services — India's largest ATM network rollout.",
         "Directed pan-India rollouts and vendor delivery schedules to guarantee SLA-compliant activation across 28 states.",
