@@ -18,7 +18,7 @@ export function Projects() {
             Built & shipped
           </h1>
           <p className="mt-3 max-w-xl text-ink-secondary md:text-lg">
-            Applying GenAI, cloud-native architecture, and product thinking to real business problems.
+            PMO dashboards and analytics prototypes — built to demonstrate delivery governance and reporting skills.
           </p>
         </motion.div>
 
@@ -48,6 +48,16 @@ export function Projects() {
                     </div>
                   </div>
                   <p className="mt-5 text-sm leading-relaxed text-ink-secondary">{project.summary}</p>
+                  {"dataNote" in project && project.dataNote && (
+                    <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-amber-800">
+                        Demo data
+                      </p>
+                      <p className="mt-1 text-sm leading-relaxed text-amber-900/80">
+                        {project.dataNote}
+                      </p>
+                    </div>
+                  )}
                   <ul className="mt-5 space-y-2.5">
                     {project.highlights.map((point, j) => (
                       <li key={j} className="flex gap-3 text-sm leading-relaxed text-ink-secondary">
