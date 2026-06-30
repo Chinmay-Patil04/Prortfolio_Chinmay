@@ -96,7 +96,7 @@ export const profile = {
       company: "Onida MIRC Electronics Ltd",
       companyShort: "Onida",
       period: "Aug 2019 – Aug 2020",
-      location: "Palghar",
+      location: "Mumbai",
       type: "Internship",
       techStack: ["Excel", "PowerPoint"],
       outcome: "Improved production reporting cycle and QA visibility across the floor.",
