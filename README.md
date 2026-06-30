@@ -79,10 +79,10 @@ with precision, governance, and measurable outcomes.**
 
 ## Skills
 
-**PMO & Delivery** — RAID Matrix · Agile/Scrum · Waterfall · Hybrid PM · ITIL · Vendor & SLA Management  
+**PMO & Delivery** — RAID Matrix · Agile/Scrum · Waterfall · Hybrid PM · Vendor & SLA Management  
 **Data & Reporting** — Power BI · DAX · Star Schema · MS Excel · KPI Dashboards  
 **GenAI & Automation** — Microsoft Copilot · n8n · AI Agents & RAG · Prompt Engineering · Python  
-**Tools** — JIRA · ServiceNow · Confluence · MS Project · SAP · UNMS · Optimus · M6  
+**Tools** — JIRA · ServiceNow · Confluence · MS Project · SAP · UNMS · Optimus  
 **Telecom** — SD-WAN · VSAT · MPLS · ILL · O2C Lifecycle · NOC Operations  
 
 ---

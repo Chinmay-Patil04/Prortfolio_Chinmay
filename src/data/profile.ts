@@ -149,7 +149,7 @@ export const profile = {
   skillGroups: [
     {
       label: "Programme & Project Management",
-      items: ["PMO Governance", "RAID Matrix", "Agile / Scrum", "Waterfall", "Hybrid PM", "ITIL"],
+      items: ["PMO Governance", "RAID Matrix", "Agile / Scrum", "Waterfall", "Hybrid PM"],
     },
     {
       label: "Stakeholder & Delivery",
@@ -165,7 +165,7 @@ export const profile = {
     },
     {
       label: "Tools & Platforms",
-      items: ["MS Project", "JIRA", "ServiceNow", "Confluence", "SAP", "UNMS", "Optimus", "M6"],
+      items: ["MS Project", "JIRA", "ServiceNow", "Confluence", "SAP", "UNMS", "Optimus"],
     },
     {
       label: "Telecom & Networks",
