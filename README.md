@@ -7,7 +7,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-chinmaypatil04-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chinmaypatil04)
 [![Email](https://img.shields.io/badge/Email-chinmaypatil13%40gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:chinmaypatil13@gmail.com)
 [![CSM](https://img.shields.io/badge/Certified-ScrumMaster%C2%AE-6366F1?style=flat)](https://www.linkedin.com/in/chinmaypatil04)
-[![PMP](https://img.shields.io/badge/PMP%C2%AE-Pursuing-F59E0B?style=flat)](https://www.linkedin.com/in/chinmaypatil04)
+[![PMP](https://img.shields.io/badge/PMP%C2%AE-Certified-6366F1?style=flat)](https://www.linkedin.com/in/chinmaypatil04)
 [![Built with](https://img.shields.io/badge/Built%20with-React%20%2B%20Vite-61DAFB?style=flat&logo=react&logoColor=black)](https://vitejs.dev)
 
 **Driving national-scale infrastructure programmes for India's top banking institutions —  
@@ -89,7 +89,7 @@ with precision, governance, and measurable outcomes.**
 
 - 🎓 **B.E. Electronics & Telecommunications** — Mumbai University (2019–2022) · CGPA: 8.4
 - ✅ **Certified ScrumMaster® (CSM)** — Scrum Alliance / Simplilearn
-- 🔄 **PMP®** — Pursuing (PMI / Simplilearn)
+- ✅ **PMP®** — Certified (PMI / Simplilearn)
 - ✅ **GenAI in Project & Quality Management** — Simplilearn
 - ✅ **Networking & Administration Fundamentals** — LinkedIn Learning
 
