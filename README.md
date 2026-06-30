@@ -19,28 +19,30 @@ with precision, governance, and measurable outcomes.**
 
 ## Preview
 
-![Home](docs/preview-home.png)
+**Live site:** [prortfolio-chinmay.vercel.app](https://prortfolio-chinmay.vercel.app)
+
+![Home — multi-page portfolio with stats card](docs/preview-home.png)
 
 <table>
   <tr>
-    <td><img src="docs/preview-experience.png" alt="Experience page" /></td>
-    <td><img src="docs/preview-projects.png" alt="Projects page" /></td>
+    <td width="50%"><img src="docs/preview-experience.png" alt="Experience page — tabbed career journey" /></td>
+    <td width="50%"><img src="docs/preview-projects.png" alt="Projects page — PMO Dashboard" /></td>
   </tr>
   <tr>
     <td align="center"><em>Experience — tabbed, interactive</em></td>
-    <td align="center"><em>Projects — PMO Dashboard</em></td>
+    <td align="center"><em>Projects — PMO Dashboard (Power BI)</em></td>
   </tr>
   <tr>
-    <td><img src="docs/preview-achievements.png" alt="Achievements page" /></td>
-    <td valign="top" style="padding: 16px;">
-      <strong>8 dedicated pages, each with its own URL:</strong><br/><br/>
-      🏠 Home &nbsp;·&nbsp; 👤 About<br/>
-      💼 Experience &nbsp;·&nbsp; 🚀 Projects<br/>
-      🏆 Achievements &nbsp;·&nbsp; 🛠 Skills<br/>
-      🎓 Education &nbsp;·&nbsp; 📬 Contact
-    </td>
+    <td width="50%"><img src="docs/preview-achievements.png" alt="Achievements page" /></td>
+    <td width="50%"><img src="docs/preview-contact.png" alt="Contact page" /></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Achievements — awards & impact stats</em></td>
+    <td align="center"><em>Contact — email, LinkedIn, GitHub</em></td>
   </tr>
 </table>
+
+**8 dedicated pages:** Home · About · Experience · Projects · Achievements · Skills · Education · Contact
 
 ---
 
