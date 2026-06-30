@@ -1,79 +1,135 @@
-# Chinmay K. Patil — Portfolio
+<div align="center">
 
-> Project Delivery professional specializing in **Telecom & IT infrastructure** for enterprise banking and financial services.
+# Chinmay Patil — Portfolio
+
+### PMO & Project Delivery Consultant
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-chinmaypatil04-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chinmaypatil04)
 [![Email](https://img.shields.io/badge/Email-chinmaypatil13%40gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:chinmaypatil13@gmail.com)
-[![Location](https://img.shields.io/badge/Location-Thane%2C%20Maharashtra-00d4aa?style=flat)](https://github.com/chinmay7035/Prortfolio_Chinmay)
+[![CSM](https://img.shields.io/badge/Certified-ScrumMaster%C2%AE-6366F1?style=flat)](https://www.linkedin.com/in/chinmaypatil04)
+[![PMP](https://img.shields.io/badge/PMP%C2%AE-Pursuing-F59E0B?style=flat)](https://www.linkedin.com/in/chinmaypatil04)
+[![Built with](https://img.shields.io/badge/Built%20with-React%20%2B%20Vite-61DAFB?style=flat&logo=react&logoColor=black)](https://vitejs.dev)
+
+**Driving national-scale infrastructure programmes for India's top banking institutions —  
+with precision, governance, and measurable outcomes.**
+
+</div>
 
 ---
 
-## About Me
+## Preview
 
-I'm **Chinmay K. Patil**, a **Certified ScrumMaster®** with **4+ years** of experience driving end-to-end project delivery across telecom and IT infrastructure. I specialize in **SD-WAN**, **VSAT**, and enterprise network rollouts for banking clients — from planning and vendor coordination to SLA-driven activation and 24×7 operations handover.
+![Home](docs/preview-home.png)
 
-Currently, I work as a **Program Executive – Project Delivery** at **TATA Nelco Limited**, managing pan-India deployments across **2000+ ATM locations** for enterprise banking customers.
-
-### What I bring to the table
-
-- **National-scale delivery** — Pan-India VSAT & SD-WAN rollouts with SLA compliance
-- **Enterprise banking experience** — Axis Bank, SBI, Bajaj Finance, Hitachi Payments Services
-- **Stakeholder leadership** — Multi-vendor coordination, client management, escalation handling
-- **Data-driven governance** — Excel trackers, Power BI dashboards, delivery reporting & audits
-- **Certified & growing** — CSM® certified, PMP® in progress
+<table>
+  <tr>
+    <td><img src="docs/preview-experience.png" alt="Experience page" /></td>
+    <td><img src="docs/preview-projects.png" alt="Projects page" /></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Experience — tabbed, interactive</em></td>
+    <td align="center"><em>Projects — PMO Dashboard</em></td>
+  </tr>
+  <tr>
+    <td><img src="docs/preview-achievements.png" alt="Achievements page" /></td>
+    <td valign="top" style="padding: 16px;">
+      <strong>8 dedicated pages, each with its own URL:</strong><br/><br/>
+      🏠 Home &nbsp;·&nbsp; 👤 About<br/>
+      💼 Experience &nbsp;·&nbsp; 🚀 Projects<br/>
+      🏆 Achievements &nbsp;·&nbsp; 🛠 Skills<br/>
+      🎓 Education &nbsp;·&nbsp; 📬 Contact
+    </td>
+  </tr>
+</table>
 
 ---
 
-## Experience Snapshot
+## About Chinmay
+
+**Chinmay Patil** is a PMO-oriented project delivery professional with **4+ years** of experience managing high-stakes telecom and IT infrastructure programmes for India's leading financial institutions.
+
+### Key highlights
+
+| Metric | Detail |
+|---|---|
+| **3,500+** | ATM locations deployed pan-India (VSAT & SD-WAN) |
+| **39** | Concurrent projects tracked in Power BI PMO dashboard |
+| **3,600+** | Sites monitored across ISP rollout programme |
+| **Tier-1** | Banking clients — SBI, Axis Bank, Bajaj Finance |
+
+### Awards & Recognition
+
+- 🏅 **Certificate of Excellence** — Tata Communications (Sept 2023) for driving High MRC closures
+- 🏅 **Hitachi Commendation** — for deploying 2,580+ SBI VSAT/SD-WAN sites ahead of schedule
+
+---
+
+## Experience
 
 | Role | Company | Period |
-|------|---------|--------|
-| Program Executive – Project Delivery | TATA Nelco Limited | Aug 2024 – Present |
-| Project Coordinator – Service Delivery | Tata Communications Limited | Jan 2023 – Aug 2024 |
-| Trainee Engineer – Production & Quality | Onida MIRC Electronics Ltd | Aug 2019 – Aug 2020 |
-| Supervisor – Automation (PLC & HMI) | Selec Controls Pvt. Ltd | May 2018 – May 2019 |
+|---|---|---|
+| Project Management | TATA Nelco Ltd | Aug 2024 – Present |
+| Project Coordinator | Tata Communications Ltd | Jan 2023 – Aug 2024 |
+| Operations Intern | Onida MIRC Electronics Ltd | Aug 2019 – Aug 2020 |
+| Automation Supervisor | Selec Controls Pvt Ltd | May 2018 – May 2019 |
 
 ---
 
-## Skills & Tools
+## Skills
 
-**Core:** Telecom & Network Project Execution · SD-WAN · VSAT · MPLS · ILL · Project Planning · Stakeholder Management · Vendor & SLA Management · RAID · Agile / Waterfall / Hybrid PM
-
-**Tools:** MS Project · JIRA · ServiceNow · UNMS · Optimus · M6 · Advanced Excel · Power BI · SQL · Microsoft Copilot
+**PMO & Delivery** — RAID Matrix · Agile/Scrum · Waterfall · Hybrid PM · ITIL · Vendor & SLA Management  
+**Data & Reporting** — Power BI · DAX · Star Schema · MS Excel · KPI Dashboards  
+**GenAI & Automation** — Microsoft Copilot · n8n · AI Agents & RAG · Prompt Engineering · Python  
+**Tools** — JIRA · ServiceNow · Confluence · MS Project · SAP · UNMS · Optimus · M6  
+**Telecom** — SD-WAN · VSAT · MPLS · ILL · O2C Lifecycle · NOC Operations  
 
 ---
 
 ## Education & Certifications
 
-- **B.E. Electronics & Telecommunications** — Mumbai University (2022)
-- **Diploma – Electronics & Telecommunications** — Government Polytechnic Vikramgad, MSBTE (2018)
-
-**Certifications:** Certified ScrumMaster® · PMP® (Pursuing) · CCNA · GenAI in Project Management · Master Microsoft Excel · Networking Fundamentals
+- 🎓 **B.E. Electronics & Telecommunications** — Mumbai University (2019–2022) · CGPA: 8.4
+- ✅ **Certified ScrumMaster® (CSM)** — Scrum Alliance / Simplilearn
+- 🔄 **PMP®** — Pursuing (PMI / Simplilearn)
+- ✅ **GenAI in Project & Quality Management** — Simplilearn
+- ✅ **Networking & Administration Fundamentals** — LinkedIn Learning
 
 ---
 
-## This Repository
+## Tech Stack (this portfolio)
 
-Personal portfolio website built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Framer Motion**.
+| Layer | Technology |
+|---|---|
+| Framework | React 18 + TypeScript |
+| Build tool | Vite |
+| Styling | Tailwind CSS |
+| Routing | React Router v6 |
+| Animations | Framer Motion |
+| Icons | Lucide React |
 
-All content is centralized in `src/data/profile.ts` — update that file to refresh the site without touching components.
+---
 
-### Run locally
+## Run locally
 
 ```bash
+git clone https://github.com/Chinmay-Patil04/Prortfolio_Chinmay.git
+cd Prortfolio_Chinmay
 npm install
 npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173)
 
-### Build for production
+## Build for production
 
 ```bash
 npm run build
 ```
 
 Output goes to `dist/` — deploy to Vercel, Netlify, or GitHub Pages.
+
+## Update content
+
+All content lives in **`src/data/profile.ts`** — edit name, experience, skills, projects, and certifications there without touching any component.
 
 ---
 
@@ -82,10 +138,12 @@ Output goes to `dist/` — deploy to Vercel, Netlify, or GitHub Pages.
 | | |
 |---|---|
 | **Email** | [chinmaypatil13@gmail.com](mailto:chinmaypatil13@gmail.com) |
-| **Phone** | +91 7057538253 |
+| **Phone** | +91 70575 38253 |
 | **LinkedIn** | [linkedin.com/in/chinmaypatil04](https://www.linkedin.com/in/chinmaypatil04) |
-| **Location** | Thane, Maharashtra, India |
+| **Location** | Thane, Maharashtra, India · Open to Relocation |
 
 ---
 
-*Beyond work: fitness enthusiast & nature photography.*
+<div align="center">
+  <sub>Last updated June 2026 · Built by Chinmay Patil</sub>
+</div>
