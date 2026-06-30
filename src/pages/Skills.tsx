@@ -3,29 +3,34 @@ import { profile } from "../data/profile";
 
 export function Skills() {
   return (
-    <section id="skills" className="page-section bg-panel">
-      <div className="section-inner">
-        <div className="mb-12">
-          <span className="eyebrow text-brand-dim">Expertise</span>
-          <h2 className="mt-3 font-display text-3xl font-bold text-ink md:text-4xl lg:text-5xl">
+    <div className="page bg-bg-soft">
+      <div className="pointer-events-none absolute -right-32 -top-32 h-[450px] w-[450px] rounded-full bg-accent-light opacity-60 blur-[120px]" />
+
+      <div className="page-inner">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-10"
+        >
+          <span className="eyebrow">Expertise</span>
+          <h1 className="mt-2 font-display text-4xl font-bold text-ink md:text-5xl">
             Skills & capabilities
-          </h2>
-          <p className="mt-4 text-ink-secondary md:text-lg">
+          </h1>
+          <p className="mt-3 text-ink-secondary md:text-lg">
             Structured by consulting relevance — governance frameworks to GenAI.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {profile.skillGroups.map((group, i) => (
             <motion.div
               key={group.label}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.06 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.07 }}
               className="card p-6"
             >
-              <h3 className="eyebrow text-brand-dim">{group.label}</h3>
+              <h3 className="eyebrow">{group.label}</h3>
               <div className="mt-4 flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <span key={item} className="pill">{item}</span>
@@ -35,6 +40,6 @@ export function Skills() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

@@ -3,32 +3,54 @@
 @tailwind utilities;
 
 @layer base {
-  html {
+  html, body, #root {
+    height: 100%;
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-surface text-gray-100 antialiased;
+    @apply bg-bg text-ink antialiased;
   }
 
   ::selection {
-    @apply bg-accent/30 text-white;
+    @apply bg-accent-light text-accent-dim;
+  }
+}
+
+@layer components {
+  /* Every page fills the screen */
+  .page {
+    @apply relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden px-6 py-28 md:px-12 lg:px-20;
+  }
+
+  .page-inner {
+    @apply mx-auto w-full max-w-6xl;
+  }
+
+  /* Card */
+  .card {
+    @apply rounded-2xl border border-line bg-bg shadow-card transition-shadow hover:shadow-card-lg;
+  }
+
+  /* Eyebrow label — same accent everywhere */
+  .eyebrow {
+    @apply font-mono text-[11px] font-semibold uppercase tracking-[0.28em] text-accent;
+  }
+
+  /* Skill / tech pill */
+  .pill {
+    @apply rounded-full border border-line bg-bg-soft px-3 py-1.5 text-xs font-medium text-ink-secondary transition hover:border-accent/30 hover:bg-accent-light hover:text-accent-dim;
   }
 }
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-gradient-to-r from-accent-glow via-accent to-accent-dim bg-clip-text text-transparent;
+  .text-accent-gradient {
+    @apply bg-gradient-to-r from-accent to-violet-400 bg-clip-text text-transparent;
   }
 
-  .glass {
-    @apply border border-surface-border/60 bg-surface-card/40 backdrop-blur-xl;
-  }
-
-  .grid-bg {
-    background-image:
-      linear-gradient(rgba(0, 212, 170, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 212, 170, 0.03) 1px, transparent 1px);
-    background-size: 64px 64px;
+  /* Very subtle dot grid for hero */
+  .dot-grid {
+    background-image: radial-gradient(circle, #CBD5E1 1px, transparent 1px);
+    background-size: 28px 28px;
   }
 }

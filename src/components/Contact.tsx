@@ -1,87 +1,72 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, Phone } from "lucide-react";
 import { profile } from "../data/profile";
-import { AnimatedSection, SectionHeading } from "./ui";
+
+const cards = [
+  { icon: Mail,     label: "Email",    getValue: () => profile.email,            getHref: () => `mailto:${profile.email}`,               cta: "Send a message" },
+  { icon: Phone,    label: "Phone",    getValue: () => profile.phone,            getHref: () => `tel:${profile.phone.replace(/\s/g,"")}`, cta: "Call directly" },
+  { icon: Linkedin, label: "LinkedIn", getValue: () => "chinmaypatil04",         getHref: () => profile.linkedin,                         cta: "Connect" },
+  { icon: Github,   label: "GitHub",   getValue: () => "Chinmay-Patil04",        getHref: () => profile.github,                           cta: "See code" },
+];
 
 export function Contact() {
   return (
-    <AnimatedSection id="contact">
-      <div className="glass relative overflow-hidden rounded-3xl p-8 md:p-12 lg:p-16">
-        <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/10 blur-[80px]" />
+    <section id="contact" className="page-section bg-brand">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-20"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 20% 50%, rgba(255,255,255,0.2) 0%, transparent 60%), radial-gradient(circle at 80% 50%, rgba(255,255,255,0.12) 0%, transparent 60%)",
+        }}
+      />
 
-        <SectionHeading
-          label="Contact"
-          title="Let's connect"
-          description="Open to opportunities in project delivery, telecom infrastructure, and enterprise IT."
-        />
+      <div className="section-inner">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-14 text-center"
+        >
+          <span className="eyebrow text-white/60">Let's connect</span>
+          <h2 className="mt-3 font-display text-4xl font-extrabold text-white md:text-5xl lg:text-6xl">
+            Open to opportunities
+          </h2>
+          <p className="mx-auto mt-4 max-w-lg text-white/60 md:text-lg">
+            Targeting PMO, consulting, and strategic delivery roles — Big 4, tier-1 consulting, and high-growth organisations.
+          </p>
+        </motion.div>
 
-        <div className="grid gap-4 sm:grid-cols-3">
-          <motion.a
-            href={`mailto:${profile.email}`}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="group flex items-center gap-4 rounded-2xl border border-surface-border/50 bg-surface-raised/50 p-5 transition hover:border-accent/40"
-          >
-            <div className="rounded-xl bg-accent/10 p-3 text-accent">
-              <Mail size={20} />
-            </div>
-            <div>
-              <p className="text-xs text-gray-500">Email</p>
-              <p className="text-sm font-medium text-gray-200 group-hover:text-accent">
-                {profile.email}
-              </p>
-            </div>
-          </motion.a>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {cards.map(({ icon: Icon, label, getValue, getHref, cta }, i) => (
+            <motion.a
+              key={label}
+              href={getHref()}
+              target={getHref().startsWith("http") ? "_blank" : undefined}
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.07 }}
+              className="group flex flex-col justify-between rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-sm transition hover:border-white/40 hover:bg-white/15"
+            >
+              <div>
+                <div className="mb-4 inline-flex rounded-xl bg-white/20 p-3 text-white">
+                  <Icon size={20} />
+                </div>
+                <p className="eyebrow text-white/50">{label}</p>
+                <p className="mt-1 text-sm font-semibold text-white break-all">{getValue()}</p>
+              </div>
+              <div className="mt-5 flex items-center gap-1.5 text-xs font-medium text-white/60 opacity-0 transition group-hover:opacity-100">
+                {cta} <ArrowUpRight size={13} />
+              </div>
+            </motion.a>
+          ))}
+        </div>
 
-          <motion.a
-            href={`tel:${profile.phone.replace(/\s/g, "")}`}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.05 }}
-            className="group flex items-center gap-4 rounded-2xl border border-surface-border/50 bg-surface-raised/50 p-5 transition hover:border-accent/40"
-          >
-            <div className="rounded-xl bg-accent/10 p-3 text-accent">
-              <Phone size={20} />
-            </div>
-            <div>
-              <p className="text-xs text-gray-500">Phone</p>
-              <p className="text-sm font-medium text-gray-200 group-hover:text-accent">
-                {profile.phone}
-              </p>
-            </div>
-          </motion.a>
-
-          <motion.a
-            href={profile.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="group flex items-center gap-4 rounded-2xl border border-surface-border/50 bg-surface-raised/50 p-5 transition hover:border-accent/40"
-          >
-            <div className="rounded-xl bg-accent/10 p-3 text-accent">
-              <Linkedin size={20} />
-            </div>
-            <div className="flex-1">
-              <p className="text-xs text-gray-500">LinkedIn</p>
-              <p className="text-sm font-medium text-gray-200 group-hover:text-accent">
-                chinmaypatil04
-              </p>
-            </div>
-            <ArrowUpRight size={16} className="text-gray-500 group-hover:text-accent" />
-          </motion.a>
+        <div className="mt-20 border-t border-white/20 pt-8 text-center text-sm text-white/30">
+          © {new Date().getFullYear()} {profile.name} · Last updated {profile.lastUpdated}
         </div>
       </div>
-
-      <footer className="mt-16 border-t border-surface-border/30 pt-8 text-center text-sm text-gray-500">
-        <p>
-          © {new Date().getFullYear()} {profile.name}. Built with React & Tailwind.
-        </p>
-      </footer>
-    </AnimatedSection>
+    </section>
   );
 }

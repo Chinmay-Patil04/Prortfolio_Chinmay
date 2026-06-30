@@ -4,30 +4,50 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans:    ["Inter", "system-ui", "sans-serif"],
         display: ["Syne", "system-ui", "sans-serif"],
+        mono:    ["JetBrains Mono", "monospace"],
       },
       colors: {
-        surface: {
-          DEFAULT: "#0a0a0f",
-          raised: "#12121a",
-          card: "#1a1a26",
-          border: "#2a2a3d",
-        },
+        // Single accent — indigo
         accent: {
-          DEFAULT: "#00d4aa",
-          dim: "#00a888",
-          glow: "#00ffc8",
+          DEFAULT: "#6366F1",
+          dim:     "#4F46E5",
+          hover:   "#4338CA",
+          light:   "#EEF2FF",
+          mid:     "#C7D2FE",
+        },
+        // Page backgrounds
+        bg: {
+          DEFAULT: "#FFFFFF",
+          soft:    "#F8FAFC",
+          subtle:  "#F1F5F9",
+        },
+        // Text
+        ink: {
+          DEFAULT:   "#0F172A",
+          secondary: "#475569",
+          muted:     "#94A3B8",
+        },
+        // Border
+        line: {
+          DEFAULT: "#E2E8F0",
+          strong:  "#CBD5E1",
         },
       },
+      boxShadow: {
+        sm:   "0 1px 3px rgba(15,23,42,0.06), 0 1px 2px rgba(15,23,42,0.04)",
+        card: "0 1px 3px rgba(15,23,42,0.06), 0 8px 24px -8px rgba(15,23,42,0.10)",
+        "card-lg": "0 4px 12px rgba(15,23,42,0.08), 0 20px 40px -12px rgba(15,23,42,0.14)",
+        accent: "0 8px 24px -4px rgba(99,102,241,0.28)",
+      },
       animation: {
-        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        float: "float 6s ease-in-out infinite",
+        float:  "float 6s ease-in-out infinite",
       },
       keyframes: {
         float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-12px)" },
+          "0%,100%": { transform: "translateY(0)" },
+          "50%":     { transform: "translateY(-10px)" },
         },
       },
     },
