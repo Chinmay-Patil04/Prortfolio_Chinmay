@@ -23,7 +23,23 @@ export function Navbar() {
   }, [location.pathname]);
 
   useEffect(() => {
-    if (!open) return;
+    const unlockScroll = () => {
+      const scrollY = document.body.style.top
+        ? Math.abs(parseInt(document.body.style.top, 10) || 0)
+        : window.scrollY;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.width = "";
+      document.body.style.overflow = "";
+      window.scrollTo(0, scrollY);
+    };
+
+    if (!open) {
+      unlockScroll();
+      return;
+    }
 
     const scrollY = window.scrollY;
     document.body.style.position = "fixed";
@@ -33,15 +49,7 @@ export function Navbar() {
     document.body.style.width = "100%";
     document.body.style.overflow = "hidden";
 
-    return () => {
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      document.body.style.width = "";
-      document.body.style.overflow = "";
-      window.scrollTo(0, scrollY);
-    };
+    return unlockScroll;
   }, [open]);
 
   return (
