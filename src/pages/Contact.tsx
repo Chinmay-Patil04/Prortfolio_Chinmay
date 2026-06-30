@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 import { profile } from "../data/profile";
 
 const cards = [
   { icon: Mail,     label: "Email",    value: profile.email,       href: `mailto:${profile.email}`,                  cta: "Send a message" },
-  { icon: Phone,    label: "Phone",    value: profile.phone,       href: `tel:${profile.phone.replace(/\s/g, "")}`,  cta: "Call directly"  },
   { icon: Linkedin, label: "LinkedIn", value: "chinmaypatil04",    href: profile.linkedin,                            cta: "Connect"        },
   { icon: Github,   label: "GitHub",   value: "Chinmay-Patil04",   href: profile.github,                              cta: "See code"       },
 ];
@@ -30,7 +29,7 @@ export function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map(({ icon: Icon, label, value, href, cta }, i) => (
             <motion.a
               key={label}

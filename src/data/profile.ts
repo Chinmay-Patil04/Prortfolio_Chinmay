@@ -71,6 +71,9 @@ export const profile = {
         "Optimised the O2C lifecycle, implementing robust data validation procedures and audit-ready record-keeping.",
         "Governed proactive incident management via UNMS, minimising critical network downtime within defined TAT commitments.",
         "Designed executive dashboards to streamline milestone tracking and risk governance for senior stakeholders.",
+        "Coordinated customers, field, NOC, delivery, and installation teams to resolve blockers and protect timelines.",
+        "Partnered with Billing to clear backlog cases, validate milestones, and enable timely revenue recognition.",
+        "Ran weekly and monthly governance reviews with customers and stakeholders on status, risks, and actions.",
       ],
     },
     {
