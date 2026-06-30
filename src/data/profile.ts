@@ -5,7 +5,7 @@ export const profile = {
   headline: "PMO & Project Delivery Consultant",
   tagline:
     "Driving national-scale infrastructure programmes for India's top banking institutions — with precision, governance, and measurable outcomes.",
-  badge: "CSM® · PMP® (Pursuing)",
+  badge: "CSM® · PMP®",
   location: "Thane, Maharashtra · Open to Relocation",
   email: "chinmaypatil13@gmail.com",
   phone: "+91 70575 38253",
@@ -20,8 +20,7 @@ export const profile = {
   stats: [
     { value: "3,500+", label: "ATM locations deployed",      sub: "Pan-India VSAT & SD-WAN" },
     { value: "4+",     label: "Years in enterprise delivery", sub: "Telecom & IT infrastructure" },
-    { value: "Tier-1", label: "Banking clients served",       sub: "SBI · Axis · Bajaj Finance" },
-    { value: "39",     label: "Projects tracked in PMO",      sub: "3,600+ sites monitored" },
+    { value: "Tier-1", label: "Banking clients served",       sub: "SBI Group · Axis Group · Bajaj Finance" },
   ],
 
   pillars: [
@@ -191,7 +190,7 @@ export const profile = {
   ],
 
   certifications: [
-    { name: "Project Management Professional (PMP)®", issuer: "PMI / Simplilearn",            status: "Pursuing" },
+    { name: "Project Management Professional (PMP)®", issuer: "PMI / Simplilearn",            status: "Active"   },
     { name: "Certified ScrumMaster® (CSM)",           issuer: "Scrum Alliance / Simplilearn",  status: "Active"   },
     { name: "GenAI in Project & Quality Management",  issuer: "Simplilearn",                   status: "Active"   },
     { name: "Networking & Administration Fundamentals", issuer: "LinkedIn Learning",            status: "Active"   },
