@@ -21,20 +21,20 @@ with precision, governance, and measurable outcomes.**
 
 **Live site:** [prortfolio-chinmay.vercel.app](https://prortfolio-chinmay.vercel.app)
 
-![Home — multi-page portfolio with stats card](docs/preview-home.png)
+![Home — multi-page portfolio with stats card](docs/screenshots/home.png)
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/preview-experience.png" alt="Experience page — tabbed career journey" /></td>
-    <td width="50%"><img src="docs/preview-projects.png" alt="Projects page — PMO Dashboard" /></td>
+    <td width="50%"><img src="docs/screenshots/experience.png" alt="Experience page — tabbed career journey" /></td>
+    <td width="50%"><img src="docs/screenshots/projects.png" alt="Projects page — PMO Dashboard" /></td>
   </tr>
   <tr>
     <td align="center"><em>Experience — tabbed, interactive</em></td>
     <td align="center"><em>Projects — PMO Dashboard (Power BI)</em></td>
   </tr>
   <tr>
-    <td width="50%"><img src="docs/preview-achievements.png" alt="Achievements page" /></td>
-    <td width="50%"><img src="docs/preview-contact.png" alt="Contact page" /></td>
+    <td width="50%"><img src="docs/screenshots/achievements.png" alt="Achievements page" /></td>
+    <td width="50%"><img src="docs/screenshots/contact.png" alt="Contact page" /></td>
   </tr>
   <tr>
     <td align="center"><em>Achievements — awards & impact stats</em></td>
