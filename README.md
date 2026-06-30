@@ -61,8 +61,8 @@ with precision, governance, and measurable outcomes.**
 
 ### Awards & Recognition
 
+- 🏅 **Hitachi Commendation** (2025–2026) — for deploying 2,580+ SBI VSAT/SD-WAN sites ahead of schedule
 - 🏅 **Certificate of Excellence** — Tata Communications (Sept 2023) for driving High MRC closures
-- 🏅 **Hitachi Commendation** — for deploying 2,580+ SBI VSAT/SD-WAN sites ahead of schedule
 
 ---
 

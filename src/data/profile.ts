@@ -44,14 +44,14 @@ export const profile = {
 
   achievements: [
     {
+      award: "Hitachi Commendation",
+      date: "2025 – 2026",
+      body: "Recognised by Hitachi Payments Services for deploying 2,580+ SBI VSAT/SD-WAN sites ahead of schedule.",
+    },
+    {
       award: "Certificate of Excellence",
       date: "September 2023",
       body: "Awarded by Tata Communications for driving High MRC closures across enterprise banking delivery programmes.",
-    },
-    {
-      award: "Hitachi Commendation",
-      date: "2024",
-      body: "Recognised by Hitachi Payments Services for deploying 2,580+ SBI VSAT/SD-WAN sites ahead of schedule.",
     },
   ],
 
